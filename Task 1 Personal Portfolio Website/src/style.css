@@ -14,6 +14,7 @@ body {
     font-family: var(--font-family);
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .nav-bar {
@@ -97,6 +98,65 @@ img {
 
 .about-text-title {
     text-align: center;
+}
+
+.skills-page {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 15px;
+}
+
+.skills-linear {
+    border: 1px solid black;
+    margin: 5px auto;
+    padding: 5px;
+    width: 500px;
+}
+
+.skills-text-title {
+    text-align: center;
+    margin: 5px auto;
+}
+
+.skills-list {
+    margin: 2px;
+    padding: 3px;
+}
+
+.skills-item, h3 {
+    margin: 5px;
+}
+
+.bar {
+    background: var(--secondary-color);
+    display: block;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 20px;
+}
+
+.bar span {
+    background: linear-gradient(135deg, red, yellow);
+    float: left;
+    height: 100%;
+}
+
+.html {
+    width: 80%;
+}
+
+.css {
+    width: 70%;
+}
+
+.javascript {
+    width: 75%;
+}
+
+.sql {
+    width: 90%;
 }
 
 .contact-page {
