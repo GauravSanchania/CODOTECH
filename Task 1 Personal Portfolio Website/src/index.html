@@ -8,6 +8,7 @@
 
     <title>Gaurav Sanchania</title>
 
+    <script src="https://kit.fontawesome.com/73d36dddf8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -16,13 +17,27 @@
         
         <nav class="nav-bar" id="navigation">
             <ul class="nav-list" type="none" id="navigationList">
-                <li class="nav-item">Home</li>
-                <li class="nav-item">About</li>
-                <li class="nav-item">Projects</li>
-                <li class="nav-item">Contact Me</li>
+                <li class="nav-item">
+                    <a href="#home" class="nav-item-links">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-item-links">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-item-links">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-item-links">Contact Me</a>
+                </li>
                 <li class="nav-item">
                     <div class="theme-toggle" id="lightDarkTheme">
-                        <button class="toggle-btn" id="themeBtn"></button>
+                        <i class="fa-solid fa-moon" id="moon"></i>
+                        <i class="fa-solid fa-sun" id="sun"></i>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="menu-bar" id="menuBar">
+                        <i class="fa-solid fa-bars" onclick="myMenuFunction()"></i>
                     </div>
                 </li>
             </ul>
@@ -32,7 +47,7 @@
 
     <main>
 
-        <div class="home-page" id="home">
+        <section class="home-page" id="home">
             <div class="home-container">
                 <div class="intro-text">
                     <h1 class="intro-text-name">Hii, I'm Gaurav Sanchania</h1>
@@ -40,64 +55,98 @@
                         Pro-efficient Full Stack Developer (MERN) <br>
                         A passionate computer engineer who believe in creating efficient programs.
                     </p>
+                    <div class="intro-text-btn">
+                        <button class="hire-btn">Hire Me</button>
+                        <button class="cv-btn">Download CV <i class="fa-solid fa-file"></i></button>
+                    </div>
+                    <div class="intro-text-socials">
+                        <div class="icons"><i class="fa-brands fa-instagram"></i></div>
+                        <div class="icons"><i class="fa-brands fa-linkedin"></i></div>
+                        <div class="icons"><i class="fa-brands fa-github"></i></div>
+                    </div>
                 </div>
                 <div class="profile-image" id="profilePhotoContainer">
                     <img src="./Images/Profile Photo_.png" alt="Profile Photo" id="profilePhoto">
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="about-page" id="about">
+        <section class="about-page" id="about">
             <div class="about-container">
                 <h2 class="about-text-title">About me</h2>
                 <div class="about-text-para">
-                    <p>I'm a passionate Full Stack Developer with a keen eye for crafting elegant and efficient web applications. With a solid foundation in the MERN stack (MongoDB, Express.js, React, and Node.js), I'm skilled in building robust and scalable web solutions.</p>
+                    <p>I'm a passionate Full Stack Developer with a keen eye for crafting elegant and efficient web applications. With a
+                        solid foundation in the MERN stack (MongoDB, Express.js, React, and Node.js), I'm skilled in building robust and
+                        scalable web solutions.</p>
                     <p>My expertise lies in:</p>
-                    <p>
-                        <ul>
-                            <li><strong>Frontend Development:</strong> React, JavaScript, HTML, CSS</li>
-                            <li><strong>Backend Development:</strong> Node.js, Express.js, MongoDB</li>
-                            <li><strong>API Development:</strong> RESTful and GraphQL APIs</li>
-                            <li><strong>Database Design:</strong> MongoDB and PostgreSQL</li>
-                        </ul>
-                    </p>
-                    <p>I'm constantly exploring new technologies and best practices to stay up-to-date with industry trends. I thrive on challenges and enjoy collaborating     with talented teams to deliver innovative solutions.
-                    </p>
+                    <ul>
+                        <li><strong>Frontend Development:</strong> React, JavaScript, HTML, CSS</li>
+                        <li><strong>Backend Development:</strong> Node.js, Express.js, MongoDB</li>
+                        <li><strong>API Development:</strong> RESTful and GraphQL APIs</li>
+                        <li><strong>Database Design:</strong> MongoDB and PostgreSQL</li>
+                    </ul>
+                        <p>I'm constantly exploring new technologies and best practices to stay up-to-date with industry trends. I thrive on
+                            challenges and enjoy collaborating with talented teams to deliver innovative solutions.
+                        </p>
                     <p>Let's build something amazing together!</p>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="skills-page" id="skills">
+        <section class="skills-page" id="skills">
             <div class="skills-linear">
                 <h2 class="skills-text-title">My Skills</h2>
-                    <ul type="none" class="skills-list">
-                        <li class="skills-item">
-                            <h3>HTML</h3>
-                            <span class="bar"> <span class="html"></span> </span>
-                        </li>
-                        <li class="skills-item">
-                            <h3>CSS</h3>
-                            <span class="bar"> <span class="css"></span> </span>
-                        </li>
-                        <li class="skills-item">
-                            <h3>JavaScript</h3>
-                            <span class="bar"> <span class="javascript"></span> </span>
-                        </li>
-                        <li class="skills-item">
-                            <h3>SQL</h3>
-                            <span class="bar"> <span class="sql"></span> </span>
-                        </li>
-                    </ul>
+                <ul type="none" class="skills-list">
+                    <li class="skills-item">
+                        <h3>HTML</h3>
+                        <span class="bar"> <span class="html"></span> </span>
+                    </li>
+                    <li class="skills-item">
+                        <h3>CSS</h3>
+                        <span class="bar"> <span class="css"></span> </span>
+                    </li>
+                    <li class="skills-item">
+                        <h3>JavaScript</h3>
+                        <span class="bar"> <span class="javascript"></span> </span>
+                    </li>
+                    <li class="skills-item">
+                        <h3>SQL</h3>
+                        <span class="bar"> <span class="sql"></span> </span>
+                    </li>
+                </ul>
             </div>
             <div class="skills-circular"></div>
-        </div>
+        </section>
 
-        <div class="projects-carousel" id="projects">
-            <div class="projects-container"></div>
-        </div>
+        <section class="projects-page" id="projects">
+            <div class="projects-container">
+                <h2 class="projects-text-title">Projects</h2>
+                <div class="projects-box-container">
+                    <div class="projects-box">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <h3 class="projects-item-title" id="project1">Weather Forecast Web-Application</h3>
+                        <label for="project1">HTML || CSS || TailwindCss || JavaScript</label>
+                    </div>
+                    <div class="projects-box">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <h3 class="projects-item-title" id="project2">E-Commerce Website</h3>
+                        <label for="project2">JavaScript || React.Js</label>
+                    </div>
+                    <div class="projects-box">
+                        <i class="fa-solid fa-award"></i>
+                        <h3 class="projects-item-title" id="internship1">Internship</h3>
+                        <label for="internship1">Android Development using JAVA and Android SDK</label>
+                    </div>
+                    <div class="projects-box">
+                        <i class="fa-solid fa-award"></i>
+                        <h3 class="projects-item-title" id="internship2">Internship</h3>
+                        <label for="internship2">ASP.Net using MVC Model</label>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <div class="certificates-carousel" id="certificates">
+        <section class="certificates-carousel" id="certificates">
             <div class="certificates-container">
                 <h2 class="certificates-text-title">Certificates</h2>
                 <ul type="none" class="certificates-list">
@@ -109,9 +158,9 @@
                     <li class="certificates-item"><img src="./Images/Gaurav Vipul Sanchania_Mobile Application.jpg" alt="certificate6" id="certificate6"></li>
                 </ul>
             </div>
-        </div>
+        </section>
 
-        <div class="contact-page" id="contact">
+        <section class="contact-page" id="contact">
             <div class="contact-container">
                 <h2 class="contact-text-title">Connect with me</h2>
                 <p class="contact-text-para">Please feel free to connect with me using this form.</p>
@@ -133,7 +182,7 @@
                     </div>
                 </form>
             </div>
-        </div>
+        </section>
 
     </main>
 
